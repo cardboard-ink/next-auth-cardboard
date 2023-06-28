@@ -19,6 +19,12 @@ export default function CardBoard<P extends CardBoardProfile>(
         name: data.name,
         avatar: data.avatar,
         banner: data.banner,
+        subdomain: data.subdomain,
+        aliases: data.aliases,
+        userStatus: data.userStatus,
+        moderationStatus: data.moderationStatus,
+        aboutInfo: data.aboutInfo,
+        userTransientStatus: data.userTransientStatus,
       };
     },
     options,
