@@ -1,7 +1,7 @@
 import type { OAuthConfig, OAuthUserConfig } from "next-auth/providers";
 import { CardBoardProfile, Alias, UserStatus, Content, Document, CustomReaction, AboutInfo } from "./types";
 
-export function CardBoard<P extends CardBoardProfile>(
+const CardBoard = function CardBoard<P extends CardBoardProfile>(
   options: OAuthUserConfig<P>
 ): OAuthConfig<P> {
   return {
@@ -31,4 +31,4 @@ export function CardBoard<P extends CardBoardProfile>(
   };
 }
 
-export { CardBoardProfile, Alias, UserStatus, Content, Document, CustomReaction, AboutInfo };
+export {CardBoard, CardBoardProfile, Alias, UserStatus, Content, Document, CustomReaction, AboutInfo };
