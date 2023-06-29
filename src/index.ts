@@ -12,7 +12,7 @@ export default function CardBoard<P extends CardBoardProfile>(
       url: "https://cardboard.ink/auth",
     },
     token: "https://cardboard.ink/api/v2/token",
-    userinfo: "https://cardboard.ink/api/v2/users/@me",
+    userinfo: "https://cardboard.ink/api/v2/me",
     profile(data: CardBoardProfile) {
       return {
         id: data.id,
