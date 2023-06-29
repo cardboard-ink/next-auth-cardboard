@@ -11,8 +11,8 @@ export default function CardBoard<P extends CardBoardProfile>(
     authorization: {
       url: "https://cardboard.ink/auth",
     },
-    token: "https://cardboard.ink/api/v1/token",
-    userinfo: "https://cardboard.ink/api/v1/users/@me",
+    token: "https://cardboard.ink/api/v2/token",
+    userinfo: "https://cardboard.ink/api/v2/users/@me",
     profile(data: CardBoardProfile) {
       return {
         id: data.id,
